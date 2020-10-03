@@ -4,14 +4,34 @@ body, html{
 }
 
 body{
-    background-color: red;
+    background-color: #676060;
+}
+
+.header, .container-body, .content-box{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.header, .content-box{
+    border: 8px solid #CCC;
+}
+
+.header{
+    height: 100px;
+    background-color: #272822;
+    color: white;
+}
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
 .container-body{
-    background-color: #00BFFF;
+    background-color: solid #676060;
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     width: 100%;
     
@@ -20,9 +40,11 @@ body{
 .content-box {
     width: 700px;
     height: 350px;
-    background-color: yellow;
+    background-color: #272822;
     color: black;
-    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 200px;
 }
 
 .linha{
