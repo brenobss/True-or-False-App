@@ -7,7 +7,7 @@ body{
     background-color: #676060;
 }
 
-.header, .container-body, .content-box{
+.header, .container-body, .content-box, .linha2{
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -49,5 +49,9 @@ body{
 
 .linha{
     margin-top: 100px;
+}
+
+.linha2{
+    margin-top: 50px;
 }
   
