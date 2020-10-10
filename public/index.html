@@ -5,28 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>True of False</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../src/css/style.css" </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
 
-<body>
+<body id="body">
     <div class="header">
         <h1 class="title">True or False</h1>
     </div>
-    <div class="container-body rounded">
-        <div class="content-box">
-            <div class="row linha">
-                <div class="col-4">
-                    <input class="form-control form-control-lg" id="operador1" type="text" placeholder="Operador 1">
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="col-4">
-                    <input class="form-control form-control-lg" id="condicional" type="text" placeholder="Condicional">
+                <div class="modal-body" id="modalBody">
+                    ...
                 </div>
-                <div class="col-4">
-                    <input class="form-control form-control-lg" id="operador2" type="text" placeholder="Operador 2">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btnOk"
+                        onclick="window.location.reload()">Ok</button>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!--Caixa Central-->
+    <div class="container-body rounded">
+        <div class="content-box">
+            <form name="form_evento" id="formId">
+                <div class="row linha">
+                    <div class="col-4">
+                        <input class="form-control form-control-lg" id="operador1" type="text" placeholder="Operador 1">
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control form-control-lg" id="condicional" type="text"
+                            placeholder="Condicional">
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control form-control-lg" id="operador2" type="text" placeholder="Operador 2">
+                    </div>
+                </div>
+            </form>
             <div class="row linha2">
-                <button type="submit" class="btn btn-secondary btn-lg" id="submit">Submit
+                <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-secondary btn-lg"
+                    id="submit">Verificar
                 </button>
             </div>
         </div>
@@ -34,35 +64,22 @@
     </div>
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="modalTrue" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
 
 
 
     <script type="text/javascript" src="../src/dist/bundle.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        src="../public/assets/js/bootstrap.min.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>
